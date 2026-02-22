@@ -1,7 +1,9 @@
 <# This script uses COM objects to access transaction notification emails from my bank and 
    compiles them into an excel spreadsheet. This is my first time using powershell and my primary
    objective is to learn some of the basics of powershell scripting while also helping me track my
-   monthly expenditures. #>
+   monthly expenditures. 
+   
+   Note that this script requires Excel and the Microsoft office version of Outlook installed. #>
 
 
 <# Create the outlook COM object and login to the default profile.
@@ -76,4 +78,5 @@ while($true){
 
 # Save excel file and quit excel COM object
 $workbook.SaveAs("C:\Users\emily_lofstead.c\Desktop\Transactions.xlsx") #update this line to reflect your actual file structure
+
 $excel.Quit()
