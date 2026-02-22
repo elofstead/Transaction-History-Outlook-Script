@@ -77,6 +77,7 @@ while($true){
 }
 
 # Save excel file and quit excel COM object
-$workbook.SaveAs("C:\Users\emily_lofstead.c\Desktop\Transactions.xlsx") #update this line to reflect your actual file structure
+$workbook.SaveAs("C:\Users\USERNAME\Desktop\Transactions.xlsx") #update this line to reflect your actual file structure/desired location
 
 $excel.Quit()
+
